@@ -1,4 +1,4 @@
-#include "difficultyui.h"
+#include "difficultyUI.h"
 
 
 difficultyUI::difficultyUI()

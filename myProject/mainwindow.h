@@ -29,6 +29,8 @@ private slots:
     void Operation();
     void Graph();
     void Introduction();
+    void KeyPressShow();
+    void ValueShow();
 
 private:
     void createActions();
@@ -49,6 +51,7 @@ private:
     QMenu *fileMenu;
     QMenu *editMenu;
     QMenu *helpMenu;
+    QMenu *controlMenu;
     QToolBar *fileToolBar;
     QToolBar *editToolBar;
     QAction *newAct;

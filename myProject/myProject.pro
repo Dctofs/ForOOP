@@ -18,7 +18,8 @@ SOURCES += main.cpp\
     graphui.cpp \
     operationui.cpp \
     screenui.cpp \
-    soundui.cpp
+    soundui.cpp \
+    keypress.cpp
 
 HEADERS  += mainwindow.h \
     difficultyUI.h \
@@ -26,10 +27,6 @@ HEADERS  += mainwindow.h \
     soundUI.h \
     graphUI.h \
     operationUI.h \
-    difficultyui.h \
-    graphui.h \
-    operationui.h \
-    screenui.h \
-    soundui.h
+    keypress.h
 
 FORMS    +=

@@ -26,8 +26,6 @@ QT_BEGIN_NAMESPACE
 class Ui_Dialog_Difficulty
 {
 
-
-
 public:
     QLabel *label;
     QWidget *widget;

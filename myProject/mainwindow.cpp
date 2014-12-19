@@ -5,6 +5,7 @@
 #include "operationUI.h"
 #include "difficultyUI.h"
 #include "graphUI.h"
+#include "keypress.h"
 
 
 MainWindow::MainWindow()
@@ -57,6 +58,14 @@ void MainWindow::createMenus()
     QAction *AboutUs = new QAction(tr("&About Us"), this);
     helpMenu->addAction(AboutUs);
     connect(AboutUs,SIGNAL(triggered()),this,SLOT(about()));
+
+       controlMenu = menuBar()->addMenu(tr("&Control(C)"));
+        QAction *Control =new QAction(tr("&KeyPressShow"),this);
+        QAction *ValueShow =new QAction(tr("&ValueShow"),this);
+        controlMenu->addAction(Control);
+        controlMenu->addAction(ValueShow);
+        connect(Control,SIGNAL(triggered()),this,SLOT(KeyPressShow()));
+        connect(ValueShow,SIGNAL(triggered()),this,SLOT(ValueShow()));
 }
 
 
@@ -112,7 +121,16 @@ void MainWindow::Graph()
     Dialog.exec();
 }
 
+void MainWindow::KeyPressShow()
+{
+    KeyPress *keyPress = new KeyPress();
+    keyPress->show();
+}
 
+void MainWindow::ValueShow()
+{
+
+}
 
 
 

@@ -1,4 +1,4 @@
-#include "soundui.h"
+#include "soundUI.h"
 
 
 soundUI::soundUI()
